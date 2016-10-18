@@ -65,7 +65,7 @@ public class MoviesAdapter extends ArrayAdapter<Movie> {
         int orientation = getContext().getResources().getConfiguration().orientation;
         if (orientation == Configuration.ORIENTATION_PORTRAIT) {
             String url = IMAGE_BASE_URL + POSTER_WIDTH + movie.poster_path;
-            Picasso.with(getContext()).load(url).fit().centerCrop()
+            Picasso.with(getContext()).load(url).fit().centerInside()
                     .placeholder(R.drawable.movie_night).transform(new RoundedCornersTransformation(30, 30))
                     .into(viewModel.movieImageView);
             //Picasso.with(getContext()).load(url).into(viewModel.movieImageView);
@@ -78,7 +78,7 @@ public class MoviesAdapter extends ArrayAdapter<Movie> {
               //      .placeholder(R.drawable.movie_night)
                 //    .into(viewModel.movieImageView);
             //Picasso.with(getContext()).load(url).into(viewModel.movieImageView);
-            Picasso.with(getContext()).load(url).fit().centerCrop()
+            Picasso.with(getContext()).load(url).fit().centerInside()
                     .placeholder(R.drawable.movie_night).transform(new RoundedCornersTransformation(10, 10))
                     .into(viewModel.movieImageView);
         }
