@@ -30,7 +30,7 @@ The following **bonus** features are implemented:
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
-![Video Walkthrough](Movies1.gif)
+![Video Walkthrough](Movies2.gif)
 
 ## Open-source libraries used
 
