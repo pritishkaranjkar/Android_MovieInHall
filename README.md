@@ -19,6 +19,7 @@ The following **optional** features are implemented:
 * [ ] Add a pull-to-refresh for the list of movies with SwipeRefreshLayout.
 * [ ] Display a nice default placeholder graphic for each image during loading.  
 * [ ] Improve the user interface through styling and coloring.
+* [ ] For popular movies (i.e. a movie voted for more than 5 stars), the full backdrop image is displayed. Otherwise, a poster image, the movie title, and overview is listed. Use Heterogenous ListViews and use different ViewHolder layout files for popular movies and less popular ones
 
 
 The following **bonus** features are implemented:
